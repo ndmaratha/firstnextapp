@@ -12,5 +12,6 @@ export const connect = async () => {
 	} catch (error) {
 		console.log("something went wrong when connection to db mongo");
 		console.log(error);
+        process.exit();
 	}
 };
